@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E2 Computer: Jeresano</title>
+    <meta name="description" content="This is a website created by Howell Darcy B. Jeresano, it includes her Autobiography and Lab Exercises">
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h3>JERESANO</h3>
+        </header>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="autobiography.html">AUTOBIOGRAPHY</a>
+            <a href="article.html">ARTICLE</a>
+            <a href="blog.html">BLOG</a>
+            <a href="forms.html">FORM</a>
+        </nav>
+
+        <main>
+            <img src="media/logo.png" alt="Deadpool and Wolverine" class="logo">
+            <div class="icon">
+                <img src="media/play2.png" alt="Deadpool and Wolverine" id="icon">
+            </div>
+
+            <audio id="music" controls loop hidden>
+                <source src="media/darcy2.mp3" type="audio/mp3">
+            </audio>
+            
+<script>
+    var music = document.getElementById("music");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        music.play();
+    }
+</script>
+
+            <form action="index.html" method="post">
+                <div class="login">
+                    <label for="Email"><b>Email Address</b></label><br>
+                    <input type= "email" id="Email" placeholder="Example@email.com" required><br>
+                    <label for="Password"><b>Password</b></label><br>
+                    <input type="password" id="Password" placeholder="Password" minlength="8" required>
+                </div>            
+    
+                <div class="info">
+                    <label for="Full Name"><b>Full Name</b></label><br>
+                    <input type="text" id="Full Name" placeholder="Full Name" required><br>
+                </div>
+
+                <div class="login">
+                    <label for="Question"><b>What is Deadpool's real name?</b></label><br>
+                    <input type="text" id="Question" placeholder="Your Answer" required><br>
+                </div>
+    
+                <div class="info">
+                    <label for="Weapon"><b>What weapon does Wolverine primarily use?</b></label><br>
+                    <select id="Weapon">
+                        <option value="Claws">Claws</option>
+                        <option value="Gun">Gun</option>
+                        <option value="Arrow">Arrow</option>
+                        <option value="Sword">Sword</option>
+                    required </select>
+                </div>
+    
+                <div class="info">
+                    <label for="Healing"><b>Who has the stronger Healing Factor?</b></label><br>
+    
+                    <input type="radio" id="Wolverine" value="Wolverine" name="Healing">
+                    <label for="Wolverine">Wolverine</label>
+                    <br>
+                    <input type="radio" id="Deadpool" value="Deadpool" name="Healing">
+                    <label for="Deadpool">Deadpool</label>
+                </div>
+    
+                <div class="info">
+                    <label for="select"><b>Which of the following do both Deadpool and Wolverine have? (Select all that apply)</b></label><br>
+                    <input type="checkbox" id="Super Strength" name="select">
+                    <label for="Super Strength">Super Strength</label><br>
+                    <input type="checkbox" id="Enhanced Reflexes" name="select">
+                    <label for="Enhanced Reflexes">Enhanced Reflexes</label><br>
+                    <input type="checkbox" id="Healing Factor" name="select">
+                    <label for="Healing Factor">Healing Factor</label><br>
+                    <input type="checkbox" id="Telepathy" name="select">
+                    <label for="Telepathy">Telepathy</label>
+                </div>
+    
+                <div class="done">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p2>
+                <b>Sorsogon College of Criminology Inc.
+                <br>
+                3928, Rizal St, Sorsogon City, Sorsogon
+                <br>
+                S.Y. 2024-2025</b>
+                <br>
+                Author: <b>Howell Darcy Bohol-Jeresano</b>
+                <br>
+                Year and Section: <b>Section II-India</b>
+                <br>
+                <a href="mailto:darcy.jeresano2019@gmail.com">darcy.jeresano2019@gmail.com</a>
+            </p2>
+        </footer>
+    </div>   
+    
+</body>
+</html>
